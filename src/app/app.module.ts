@@ -18,6 +18,6 @@ import { GroceryListComponent } from './grocery-list/grocery-list.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, GroceryListComponent]
 })
 export class AppModule { }

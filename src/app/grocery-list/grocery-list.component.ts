@@ -3,10 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-grocery-list',
   templateUrl: './grocery-list.component.html',
-  styleUrls: ['../../assets/css/bootstrap.min.css']
+  styleUrls: ['../../assets/css/bootstrap.min.css', '../../assets/css/styles.css']
 })
 
-export class GroceryListComponent implements OnInit {
+export class GroceryListComponent {
 
   task = {
     id: 0,
@@ -14,14 +14,7 @@ export class GroceryListComponent implements OnInit {
   };
   tasks = [];
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
   onClick(){
-  
-
     if (this.task.id == 0){
       this.tasks.push({id: (new Date()).getTime(), name: this.task.name, strike: false});
     }
